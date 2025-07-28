@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidhya Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <header>
+    <h1>Vidhya's Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="mag.jpeg" width="200" height="150" alt="My Image" />
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am Vidhya, an Electronics and Communication graduate, passionate about web development.
+      Enthusiastic and detail-oriented Python Developer Intern with a strong foundation in programming, 
+      data structures, and web development. Hands-on experience in developing Python scripts, automating
+      tasks, and building simple web applications using Flask/Django. Quick learner and team player with
+      a passion for clean code and problem-solving.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C Programming</li>
+      <li>Embedded Systems</li>
+      <li>HTML, CSS, JS</li>
+      <li>Microcontroller (PIC18F4580)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <h3>1. Image Steganography using LSB Encoding and Decoding</h3>
+    <ul>
+      <li>Implemented a method to hide secret info by altering the least significant bit of each byte in a digital image.</li>
+    </ul>
+
+    <h3>2. Tracking and Monitoring System for Defense Personnel</h3>
+    <ul>
+      <li>Developed a system to monitor health conditions and track the real-time location of soldiers.</li>
+      <li>Utilized Nodemcu ESP8266, GPS modem, GSM modem, pulse sensor, and temperature sensor to send 
+        health status and location messages to the control room.</li>
+    </ul>
+
+    <h3>3. Car Black Box</h3>
+    <ul>
+      <li>A device installed in vehicles to record data related to vehicle operation, like an Event Data Recorder.</li>
+      <li>It captures crucial information like speed, acceleration, gear state, providing valuable insights for accident reconstruction and analysis</li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Embedded Systems Course - Emertxe</li>
+      <li>Embedded Internship - CDAC, Chennai</li>
+    </ul>
+  </section>
+
+  <!-- ✅ Contact Form Added -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" placeholder="Enter your name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" placeholder="Enter your email" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" placeholder="Write your message..." rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="response"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Vidhya. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
